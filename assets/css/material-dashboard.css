@@ -906,6 +906,12 @@ h2.title {
     box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
 }
 
+.sidebar[data-color="dark-green"] .nav li.active a,
+.off-canvas-sidebar[data-color="dark-green"] .nav li.active a {
+    background-color: rgb(0, 44, 43);
+    box-shadow: 0 12px 20px -10px rgba(0, 44, 43, 0.28), 0 4px 20px 0px rgba(0, 44, 43, 0.12), 0 7px 8px -5px rgba(0, 44, 43, 0.2);
+}
+
 .off-canvas-sidebar .nav>li>a,
 .off-canvas-sidebar .nav>li>a:hover {
     color: #FFFFFF;
@@ -939,13 +945,21 @@ h2.title {
     max-height: 100%;
 }
 
+#welcome {
+    margin-top: 10px;
+}
+
+#content {
+    margin-top: 100px;
+}
+
 .main-panel>.content {
-    margin-top: 70px;
     padding: 30px 15px;
     min-height: calc(100% - 123px);
 }
 
 .main-panel>.footer {
+    margin-top: 100px;
     border-top: 1px solid #e7e7e7;
 }
 
@@ -2759,7 +2773,7 @@ output {
 .form-control,
 .form-group .form-control {
     border: 0;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(rgb(0, 44, 43), rgb(0, 44, 43)), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center calc(100% - 1px);
@@ -2833,14 +2847,14 @@ fieldset[disabled] .form-group .form-control {
 
 .form-group.is-focused .form-control {
     outline: none;
-    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(rgb(0, 44, 43), rgb(0, 44, 43)), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 100% 2px, 100% 1px;
     box-shadow: none;
     transition-duration: 0.3s;
 }
 
 .form-group.is-focused .form-control .material-input:after {
-    background-color: #9c27b0;
+    background-color: rgb(0, 44, 43);
 }
 
 .form-group.is-focused.form-info .form-control {
@@ -5293,6 +5307,11 @@ footer .btn {
     box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
 }
 
+.card [data-background-color="dark-green"] {
+    background: linear-gradient(60deg, rgb(0, 44, 43), rgb(0, 44, 43));
+    box-shadow: 0 12px 20px -10px rgba(0, 44, 43, 0.28), 0 4px 20px 0px rgba(0, 44, 43, 0.12), 0 7px 8px -5px rgba(0, 44, 43, 0.2);
+}
+
 .card [data-background-color="blue"] {
     background: linear-gradient(60deg, #26c6da, #00acc1);
     box-shadow: 0 12px 20px -10px rgba(0, 188, 212, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 188, 212, 0.2);
@@ -6778,4 +6797,8 @@ footer .btn {
     .table-responsive {
         overflow: visible;
     }
+}
+
+select option:hover {
+    background-color: red;
 }

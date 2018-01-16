@@ -34,13 +34,13 @@
                             <p>Home</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./user.html">
                             <i class="material-icons">person</i>
                             <p>User Profile</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./apps.html">
                             <i class="material-icons">apps</i>
                             <p>Apps</p>
@@ -95,67 +95,38 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header" data-background-color="dark-green">
-                                    <h4 class="title">Edit Profile</h4>
-                                    <p class="category">Change your information</p>
+                                    <h4 id="appName" class="title">Apps</h4>
+                                    <a href="./createApp.html" class="btn btn-success btn-round btn-xs">Create</a>
                                 </div>
-                                <div class="card-content">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label id="lblUsername" class="control-label">Username</label>
-                                                    <input type="text" class="form-control" disabled>
-                                                </div>
-                                            </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table">
+                                        <thead class="text-success">
+                                            <th>appID</th>
+                                            <th>userID</th>
+                                            <th>appName</th>
+                                            <th>type</th>
+                                            <th>description</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr> </tr>
 
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Email</label>
-                                                    <input id="txtEmail" type="email" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Current Password</label>
-                                                    <input id="txtCurrentPassword" type="password" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">New Password</label>
-                                                    <input id="txtNewPassword" type="password" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button id="btnUpdateProfile" type="submit" class="btn btn-success pull-right">Update Profile</button>
-                                        <div class="clearfix"></div>
-                                    </form>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-profile">
-                                <div class="card-avatar">
-                                    <a href="#pablo">
-                                        <img class="img" src="../assets/img/faces/user.png" />
-                                    </a>
+                            <form class="navbar-form" role="search">
+                                <div class="form-group  is-empty">
+                                    <input type="text" class="form-control" placeholder="Search app by ID">
+                                    <span class="material-input"></span>
                                 </div>
-                                <div class="content">
-                                    <h6 class="category text-gray">Hello,</h6>
-                                    <h4 id="lblUsername" class="card-title">Alec Thompson</h4>
-
-                                    <a href="#pablo" class="btn btn-danger btn-default">Log out</a>
-                                </div>
-                            </div>
+                                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                    <i class="material-icons">search</i>
+                                    <div class="ripple-container"></div>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -181,9 +152,13 @@
 <script src="../assets/js/arrive.min.js"></script>
 <!--  PerfectScrollbar Library -->
 <script src="../assets/js/perfect-scrollbar.jquery.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/bootstrap-notify.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!-- Material Dashboard javascript methods -->
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
-<!-- Gamify Scripts -->
-<script src="../assets/js/script.js"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
 
 </html>
